@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+       
+       
+<tiles-definitions>
+
+  <definition name="app.default" template="/WEB-INF/layouts/default.jsp">
+  	<put-attribute name="title" value="spring boot" />
+  </definition>
+  
+  <definition name="app.homepage" extends="app.default">
+    <put-attribute name="content" value="/WEB-INF/tiles/home.jsp" />
+  </definition>
+       
+  <definition name="app.login" extends="app.default">
+    <put-attribute name="content" value="/WEB-INF/tiles/login.jsp" />
+  </definition>
+	
+	<definition name="app.register" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/register.jsp" />
+	</definition>
+	
+	
+	<definition name="app.exception" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/exception.jsp" />
+	</definition>
+	
+	<definition name="app.mysells" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/mysells.jsp" />
+	</definition>
+	
+	<definition name="app.addauction" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/addauction.jsp" />
+	</definition>
+	
+	<definition name="app.viewauction" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/viewauction.jsp" />
+	</definition>
+	
+	<definition name="app.success" extends="app.default">
+		<put-attribute name="content" value="/WEB-INF/tiles/success.jsp" />
+	</definition>
+	
+  
+</tiles-definitions>
